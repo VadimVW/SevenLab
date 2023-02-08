@@ -1,0 +1,259 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	overflow-x: hidden;
+	height: 100%;
+}
+
+
+
+/*_________________ШАПКА_________________________________________________________________________________________________*/
+
+.header-background {
+	z-index: 0;
+	background-image: url("../Image/background.png");
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
+	width: 100vw;
+	height: 100vh;
+	position: center;
+}
+.fix_this_shit{
+    width: 100vh;
+    height: 100vh;
+}
+.title_reg {
+    z-index: 20;
+    position: center;
+    color: black;
+}
+.main_zaglav {
+	padding-top: 12vh;
+	padding-left: 10vw;
+	z-index: 1;
+	color: white;
+	font-size: 8vh
+}
+.nav_menu{
+
+}
+
+
+
+/*.comet {*/
+/*_________________СЧЕТЧИК_________________________________________________________________________________________________*/
+/*}*/
+.indentation {
+	position: relative;
+	top: 1%;
+	margin-left: 13vw;
+}
+.frame_style{
+	border: none;
+	z-index: 0;
+}
+.shell,.shell-left {
+	background: #eaf5f1;
+	width: 21vw;
+	height: 25vh;
+	display: inline-block;
+}
+.shell-left {
+	margin-left: 2.27252233% 
+}
+.numbers {
+	font-size: 8.5vh;
+	margin-top: 41%;
+	position: relative;
+	top: -60%;
+	left: 17%;
+	font-family: monospace;
+}
+.fix_numbers{
+    left: 4%;
+}
+.text {
+	position: relative;
+	top: -60%;
+	left: 18%;
+	font-size: 3vh;
+	font-family: Gill Sans, sans-serif
+}
+.info_by {
+	color: #7f8285;
+	font-family: Arial Narrow, sans-serif;
+	font-size: 20px;
+	position: relative;
+	top: -25px;
+}
+.kakoesegodnyachislo {
+	font-size: 20px;
+}
+/*.comet {*/
+/*___________КНОПКА СЧЕТЧИКА___________*/
+/*}*/
+.button_ {
+	position: relative;
+	top: 31%;
+	height: 60px; 
+}
+.btn_ {
+	width: 200px;
+	height: 60px;
+	background: black;
+	border-radius: 30px;
+	border: 2px solid #eaf5f1;
+	color: white;
+	box-shadow: 0px 10px 10px #eaf5f1;
+}
+.btn_:hover {
+	width: 195px;
+	height: 57px;
+	font-size: 15.5px;
+	box-shadow: 0px 1px 5px #eaf5f1;
+}
+
+
+
+/*.comet {*/
+/*_________________СТАТЬИ_________________________________________________________________________________________________*/
+/*}*/
+.box_article {
+	background: #eaf5f1;
+	height: 100vh;
+	width: 100vw;
+}
+.box_description{
+	background: #eaf5f1;
+	height: 100%;
+	width: 100vw;
+}
+.box_footer{
+	background: #017867;
+	height: 40vh;
+	width: 100%;
+}
+.article {
+	width: 250px;
+	height: 200px;
+	display: inline-block;
+	margin-top: 10%;
+	margin-right: 15.8%;
+}
+.fix {
+	margin-right: 0%;
+}
+.article_text {
+	font-size: 28px;
+	font-family: Gill Sans, sans-serif;
+	padding-top: 10px;
+}
+
+#article_line {
+	height: 2px;
+	border: none;
+	box-shadow: none;
+	background-color: black;
+}
+
+
+
+.test-box{
+	width: 45vw;
+	display: inline-block;
+}
+.container {
+	width: 100vh;
+	height: 0;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.main_block {
+	background: #005e51;
+	min-height: 25%;
+	min-width: 17%;
+	width: 17%;
+	height: 25%;
+	padding-top: 1.7vh;
+	position: relative;
+	top: 8.5%;
+	left: 10vw;
+	border-radius: 2vh;
+	border: 1px solid #013d35;
+    box-shadow: 2px 2px 2px #002e28;
+}
+
+.main_block:hover {
+	background: #017867;
+	border: 2px solid gold;
+	box-shadow: 5px 8px 8px #002e28;
+}
+.text_style, .text_style-express{
+    color: white;
+    margin-left: 31.3%;
+	font-size: 3vh;
+}
+.text_style-express{
+	margin-left: 24%;
+}
+.content_main_box {
+    color: white;
+    margin-left: 10%;
+	font-size: 2vh;
+	padding-top: 1%;
+}
+.description_container{
+	height: 80vh;
+}
+
+.btn_start {
+	z-index: 1;
+	width: 11vw;
+	height: 6.5vh;
+	background: #db1426;
+	border-radius: 4vh;
+	border: 2px solid #de2839;
+	color: white;
+	box-shadow: 0 3px 5px #3b0a0f;
+	font-size: 120%;
+	visibility: visible;
+	position: absolute;
+	left: 32.6%;
+	top: 75%;
+}
+.btn_start:hover {
+	width: 10.45vw;
+	height: 6.18vh;
+	font-size: 112%;
+	box-shadow: 0px 3px 5px #3b0a0f;
+	background: #de0418;
+	left: 32.85%;
+}
+
+
+.description-title{
+	font-size: 4vh;
+	margin-left: 10vw;
+	padding-top: 3vw;
+}
+.description{
+	font-size: 3vh;
+	margin-left: 10vw;
+}
+
+.description-Image{
+	width: 100%;
+	height: 100%;
+}
+
+.footer-Image{
+	margin-left: 95vw;
+	margin-top: 16vw;
+	width: 5vw;
+	height: 5vh;
+}

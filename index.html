@@ -1,0 +1,187 @@
+<?php require 'libs/simplehtml/value.php'; ?>
+
+<!DOCTYPE html>
+<html lang="en,ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="Style/navbar_style.css">
+    <link rel="stylesheet" href="Style/index_style.css">
+    <link rel="stylesheet" href="Style/Animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="JS_scripts/nav_script.js"></script>
+    <script src="libs/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+
+    <!-- Этот скрипт даёт плавное перемещение по якрорям -->
+    <script type="text/javascript">
+        $(function () {
+            $('a[href]').on('click', function (event) {
+                event.preventDefault();
+
+                var sc = $(this).attr("href"),
+                    dn = $(sc).offset().top;
+
+                $('html, body').animate({scrollTop: dn}, 1000);
+
+            });
+        });
+    </script>
+
+</head>
+<body>
+<div class="box_article">
+    <nav>
+        <div id="nav_anim" class="nav_anim">
+            <span class="hover"><a href="#top" style="font-size: 150%"><img src="Image/Logo.png" alt=""
+                                                                            class="logo_nav">SevenLab</a></span>
+        </div>
+    </nav>
+
+
+    <!-- Верхняя часть, шапка -->
+    <div class="header-background" id="top">
+        <h1 class="main_zaglav">Тести на <br> Коронавірус</h1>
+
+        <!-- 		PLR -->
+        <a href="#plr">
+            <div class="shell  main_block wow fadeInLeftBig">
+                <h1 class="text_style">ПЛР тест</h1>
+                <div class="content_main_box">
+                    Точність тесту: 99%<br>
+                    Вартість тестування: 850 грн<br>
+                    Результат можна отримати: <br>через 24 години<br>
+                </div>
+            </div>
+        </a>
+
+        <!-- 		IFO -->
+        <a href="#ifa">
+            <div class="shell-left  main_block wow fadeInLeftBig">
+                <h1 class="text_style">ІФА тест</h1>
+                <div class="content_main_box">
+                    Точність тесту: 97%<br>
+                    Вартість тестування: 250 грн<br>
+                    Результат можна отримати: <br>через 24 години<br>
+                </div>
+            </div>
+        </a>
+
+        <!-- 		EXPRESS -->
+        <a href="#express">
+            <div class="shell-left  main_block wow fadeInLeftBig">
+                <h1 class="text_style-express">Експерс тест</h1>
+                <div class="content_main_box">
+                    Точність тесту: 95%<br>
+                    Вартість тестування: 190 грн<br>
+                    Результат можна отримати: <br>через 15 хвилин<br>
+                </div>
+            </div>
+        </a>
+        <button class="btn_start wow fadeInUp">Зробити тест</button>
+    </div>
+</div>
+<div class="box_article" style="margin-top: 20vh; background: white">
+    <!-- Main. Счетчики -->
+
+    <div class="indentation" id="sa">
+        <div class="shell wow fadeInLeft">
+            <div class="numbers">
+                394293
+            </div>
+            <div class="text">
+                Протестовано клієнтів
+            </div>
+        </div>
+        <div class="shell-left wow fadeInDown">
+            <div class="numbers">
+                 24/7
+            </div>
+            <div class="text">
+                Працюємо кожен день
+            </div>
+        </div>
+        <div class="shell-left wow fadeInRight">
+            <div class="numbers fix_numbers">
+                ISO 17025
+            </div>
+            <div class="text">
+                Міжнародний стандарт
+            </div>
+        </div>
+    </div>
+    <h1 style="font-family: Gill Sans, sans-serif; margin-left: 35vw; font-size: 5vh;" class="wow fadeInUp"> Регіони де
+        ми працюємо </h1>
+    <iframe src="Navbar/svg_map.html" title="Map" width="100%" height="80%"
+            class="frame_style wow fadeInUp"></iframe>
+
+</div>
+
+<!-- Статьи -->
+
+<div class="box_description" style="margin-top: 20vh; ">
+    <div class="description_container">
+        <div id="plr" class="test-box">
+            <h5 class="description-title">ПЛР-ТЕСТУВАННЯ</h5>
+            <p class="description">Найбільш точним методом діагностування Ковід-19 є ПЛР-тест. З його допомогою
+                визначається
+                наявність вірусу в
+                організмі людини навіть у перші дні появи симптомів. Таке дослідження виявляє у біологічному матеріалі
+                пацієнта генетичний ланцюг вірусу SARS-CoV-2.
+                Для проведення аналізу у хворого беруть матеріал із горла та носової порожнини. Якщо така процедура, то
+                перед нею не можна пити, вживати їжу і навіть чистити зуби. Тільки у цьому випадку результат буде
+                максимально точним.</p>
+        </div>
+        <div style="width: 45vw; display: inline-block; position: relative; top: -20vh;">
+            <img src="Image/koronovirus.jpeg" alt="" class="description-Image">
+        </div>
+    </div>
+
+    <div class="description_container">
+        <div id="ifa" class="test-box">
+            <h5 class="description-title">ІФА-ТЕСТ</h5>
+            <p class="description">Подібно до експрес-тестування, дане дослідження спрямоване на знаходження антитіл,
+                проте,
+                для аналізу
+                використовується не звичайна кров, а її сироватка. Це складніше тестування, яке потребує наявності
+                спеціального устаткування. Все це має виконуватися строго у лабораторних умовах.
+                ІФА-тест більш чутливий порівняно з експрес-методикою, він спрямований безпосередньо на виявлення в
+                крові
+                людини конкретних імуноглобулінів. Проводити його рекомендується через 5-10 днів від початку
+                захворювання.</p>
+        </div>
+        <div style="width: 45vw; display: inline-block; position: relative; top: -20vh;">
+            <img src="Image/koronovirus.jpeg" alt="" class="description-Image">
+        </div>
+    </div>
+    <div class="description_container">
+        <div id="express" class="test-box">
+            <h5 class="description-title">ЕКСПРЕС-ТЕСТУВАННЯ</h5>
+            <p class="description">Даний метод не можна назвати надточним, проте він проводиться дуже швидко і дозволяє
+                отримати загальну
+                картину перебігу захворювання. Принцип його роботи ґрунтується на виявленні у пацієнта антитіл до
+                Ковід-19.
+                Для цього потрібне дослідження капілярної крові. Антитіла є захисними включеннями, що утворюються в
+                організмі людини при попаданні патогенного вірусу. Експрес-тест дозволяє швидко визначити специфічні
+                антитіла та їх кількість у крові, незалежно від наявності симптомів захворювання.</p>
+        </div>
+        <div style="width: 45vw; display: inline-block; position: relative; top: -20vh;">
+            <img src="Image/koronovirus.jpeg" alt="" class="description-Image">
+        </div>
+    </div>
+</div>
+</body>
+
+<footer>
+    <div class="box_footer" style="; height: 40vh">
+        <img src="Image/Logo.png" alt=""
+             class="footer-Image">
+    </div>
+</footer>
+
+</html>
