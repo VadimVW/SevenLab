@@ -69,7 +69,7 @@ body {
 	margin-top: 41%;
 	position: relative;
 	top: -60%;
-	left: 17%;
+	left: 18%;
 	font-family: monospace;
 }
 .fix_numbers{
@@ -78,7 +78,7 @@ body {
 .text {
 	position: relative;
 	top: -60%;
-	left: 18%;
+	left: 15%;
 	font-size: 3vh;
 	font-family: Gill Sans, sans-serif
 }
@@ -131,11 +131,7 @@ body {
 	height: 100%;
 	width: 100vw;
 }
-.box_footer{
-	background: #017867;
-	height: 40vh;
-	width: 100%;
-}
+
 .article {
 	width: 250px;
 	height: 200px;
@@ -164,6 +160,7 @@ body {
 .test-box{
 	width: 45vw;
 	display: inline-block;
+	padding-top: 5vh;
 }
 .container {
 	width: 100vh;
@@ -209,6 +206,7 @@ body {
 }
 .description_container{
 	height: 80vh;
+	margin-top: 26vh;
 }
 
 .btn_start {
@@ -257,3 +255,54 @@ body {
 	width: 5vw;
 	height: 5vh;
 }
+.box_footer{
+	background: #017867;
+
+	width: 100%;
+}
+
+
+.footer {
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 20vh;
+}
+
+/* Taller footer on small screens */
+@media (max-width: 567em) {
+	body {
+		margin-bottom: 700px;
+	}
+	.footer {
+		height: 90vh;
+	}
+}
+
+/* Sticky footer style and color
+-------------------------------------------------- */
+footer {
+	padding-top: 30px;
+	background-color: #292c2f;
+	color: #bbb;
+}
+
+footer a {
+	color: #999;
+	text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+	color: #aaa;
+	text-decoration:none;
+	border-bottom:1px dotted #999;
+}
+
+footer .form-control {
+	background-color: #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+	color: #d1d2d2;
+	padding: 0.7em 1em;
+}
+
